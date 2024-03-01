@@ -8,11 +8,11 @@ import Botao from '../componentes/botao'
 
 function Login({navigation}) {
   const [selecionado, setSelecionado] = useState(false)
-  const [cpf, setCpf] = useState(0)
+  const [cnpj, setCnpj] = useState(0)
   const [senha, setSenha] = useState('')
 
   const entrar = () => {
-    console.log(cpf)
+    console.log(cnpj)
     console.log(senha)
     if (selecionado){
       console.log('Selecionado')
@@ -30,7 +30,7 @@ function Login({navigation}) {
       <Titulo txt='Conectando'></Titulo>
       <Texto txt='Continue com seus dados'></Texto>
       <View style={styles.inputs}>
-        <Input placeholder={'CPF'} onChangeText={setCpf} type={'numeric'} value={cpf}></Input>
+        <Input placeholder={'CNPJ'} onChangeText={setCnpj} type={'numeric'} value={cnpj}></Input>
         <Input placeholder={'Senha'} onChangeText={setSenha} value={senha} type={'text'} secureTextEntry={true}></Input>
       </View>
       <Botao txt='ENTRAR' onPress={entrar}></Botao>

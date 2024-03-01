@@ -40,6 +40,7 @@ function Tabs() {
 function MainStack() {
     return (
         <Stack.Navigator>
+            {/* apagar a home depois */}
             <Stack.Screen
                 name='Home'
                 component={Home}

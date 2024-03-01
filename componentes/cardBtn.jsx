@@ -5,18 +5,11 @@ import Subtitulo from '../componentes/subtitulo'
 import BtnImagem from './btnImagem'
 
 
-function CardBtn({cliente1, endereco1, id, data, navigation}) { // apagar o 1
-    const [cliente, setCliente]  = useState('Giovana Radaeli')
-    const [endereco, setEndereco] = useState('Av. Rebouças, 3965 - Jardim Sao Carlos, Sumaré - SP, 13170-023')
-
-    const buscar = () => {
-        navigation.navigate('Detalhes', {id: id})
-    }
-
+function CardBtn({cliente, endereco, id, data, onPress}) {
   return (
     <View style={styles.container}>
         <View style={styles.data}>
-            <Subtitulo txt='20/01/2024'></Subtitulo>
+            <Subtitulo txt={data}></Subtitulo>
         </View>
         <View>
             <View style={styles.cliente}>
@@ -27,7 +20,7 @@ function CardBtn({cliente1, endereco1, id, data, navigation}) { // apagar o 1
             </View>
         </View>
         <View style={styles.btn}>
-            <BtnImagem url={require('../assets/lapis.png')} onPress={buscar}></BtnImagem>
+            <BtnImagem url={require('../assets/lapis.png')} onPress={onPress}></BtnImagem>
         </View>
     </View>
   )
