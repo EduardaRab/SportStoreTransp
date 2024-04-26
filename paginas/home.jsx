@@ -10,7 +10,7 @@ function Home({navigation}) {
     <View style={styles.container}>
         <Header url={require('../assets/home.png')} titulo='Entregas' onPress={() => navigation.navigate('Login')}></Header>
         <ScrollView>
-          <CardBtn onPress={navigation.navigate('Detalhes', {id: id})}></CardBtn>
+          <CardBtn onPress={() => navigation.navigate('Detalhes', {id: id})}></CardBtn>
         </ScrollView>
     </View>
   )

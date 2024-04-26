@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { StyleSheet, View, Image, Text } from 'react-native'
+import { StyleSheet, View, Image } from 'react-native'
 import { CheckBox } from 'react-native-elements'
 import Titulo from '../componentes/titulo'
 import Texto from '../componentes/texto'

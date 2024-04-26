@@ -40,22 +40,15 @@ function Tabs() {
 function MainStack() {
     return (
         <Stack.Navigator>
-            {/* apagar a home depois */}
             <Stack.Screen
-                name='Home'
-                component={Home}
+                name='Detalhes'
+                component={Detalhes}
                 options={{ headerShown: false }}
             ></Stack.Screen>
 
             <Stack.Screen
                 name='Login'
                 component={Login}
-                options={{ headerShown: false }}
-            ></Stack.Screen>
-
-            <Stack.Screen
-                name='Detalhes'
-                component={Detalhes}
                 options={{ headerShown: false }}
             ></Stack.Screen>
 
